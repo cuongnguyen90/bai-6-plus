@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let chan = [];
+    let le = [];
+    for (i = 0;i < 20;i++){
+        let random = Math.floor(Math.random()*100);
+        arr.push(random);
+    }
+
+    chanLe(arr);
+    function chanLe(arr){
+        console.log(arr);
+        for (i = 0;i < arr.length;i++){
+            if (arr[i] % 2 == 0){
+                chan.push(arr[i])
+            }else {
+                le.push(arr[i]);
+            }
+        }
+
+        document.write("Mang : " + arr + "<br>");
+        document.write("So chan : " + chan + "<br>");
+        document.write("So le : " + le);
+    }
+
+
+</script>
+</body>
+</html>
